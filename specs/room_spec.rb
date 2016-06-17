@@ -18,8 +18,9 @@ class TestRoom < MiniTest::Test
     assert_equal(3, @room.number_of_songs())
   end
 
-  def test_songs_by_artist
-    assert_equal("Delilah",@room)
+  def test_room_has_no_songs
+    assert_equal(0, @room.no_songs)
   end
+
 
 end

@@ -8,5 +8,13 @@ class Guest
     @top_songs = []
   end
 
+  def song_list
+    @top_songs.count
+  end
+
+  def add_song_to_guest
+    
+  end
+
 
 end
