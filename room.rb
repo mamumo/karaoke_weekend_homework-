@@ -1,17 +1,21 @@
 class Room
 
-  def initialize( songs )
+  attr_reader :songs, :guests
+
+  def initialize(songs = [], guests =[], capacity)
     @songs = songs
-    @total_songs = []
+    @guests = guests
+  
   end
 
   def number_of_songs
     @songs.count
   end
 
-  def no_songs
-    @total_songs.size
+  def number_of_guests
+    @guests.count
   end
+    
 
   
 end
